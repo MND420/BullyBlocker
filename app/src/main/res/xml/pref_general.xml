@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- NOTE: EditTextPreference accepts EditText attributes. -->
+    <!-- NOTE: EditTextPreference's summary should be set to its value by the activity code. -->
+
+    <!-- NOTE: Hide buttons to simplify the UI. Users can touch outside the dialog to
+         dismiss it. -->
+    <!-- NOTE: ListPreference's summary should be set to its value by the activity code. -->
+
+
+    <EditTextPreference
+        android:defaultValue="Add Phrases to be Blocked"
+        android:summary="This is where the block phrases list is generated."
+        android:inputType="text"
+        android:key="phrases_to_block"
+        android:selectAllOnFocus="true"
+        android:singleLine="false"
+        android:title="Block Phrases" />
+
+    <EditTextPreference
+        android:defaultValue="Add Numbers to be Blocked"
+        android:summary="This is where the block numbers list is generated."
+        android:inputType="phone"
+        android:key="numbers_to_block"
+        android:singleLine="true"
+        android:title="Block Numbers"/>
+
+</PreferenceScreen>
